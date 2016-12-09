@@ -1,0 +1,13 @@
+{
+  "name": "platform",
+  "version": "0.1.0",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager ./ MyCCE --platform=win32,darwin --arch=all --version 0.34.0 --out ./dist --overwrite --icon=./app/icons/mycce.icns"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.0.1",
+    "electron-prebuilt": "^0.34.0"
+  }
+}
