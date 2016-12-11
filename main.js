@@ -8,13 +8,11 @@ var mainWindow = null;
 app.on('ready', function() {
 
     mainWindow = new BrowserWindow({
-        titleBarStyle: 'hidden-inset',
         frame: true,
         height: 600,
-        resizable: true,
         width: 800
     });
 
-    mainWindow.loadUrl('http://107.20.250.100/admin?electron');
+    mainWindow.loadUrl('http://192.168.0.3:8080/admin?electron=true');
 
 });
